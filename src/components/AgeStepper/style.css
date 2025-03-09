@@ -1,0 +1,92 @@
+.age-stepper {
+  border: 1px solid #bababa;
+  border-radius: 8px;
+  height: 35px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.age-stepper .stepper-button {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.age-stepper .stepper-button.minus {
+  justify-content: flex-start;
+}
+
+.age-stepper .stepper-button.plus {
+  justify-content: flex-end;
+}
+
+.age-stepper .minus-line {
+  width: 18px;
+  height: 4px;
+  background-color: #dadada;
+}
+
+.age-stepper .plus {
+  position: relative;
+  width: 18px;
+  height: 18px;
+}
+
+.age-stepper .horizontal-line {
+  position: absolute;
+  width: 18px;
+  height: 4px;
+  background-color: #dadada;
+  top: 7px;
+}
+
+.age-stepper .vertical-line {
+  position: absolute;
+  width: 4px;
+  height: 18px;
+  background-color: #dadada;
+  left: 7px;
+}
+
+.age-stepper .number-display {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.age-stepper .value-input {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #000000;
+  font-family: "Montserrat", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+.age-stepper .value-input:focus {
+  outline: none;
+}
+
+/* Hover states */
+.age-stepper .stepper-button:hover .minus-line,
+.age-stepper .stepper-button:hover .horizontal-line,
+.age-stepper .stepper-button:hover .vertical-line {
+  background-color: #c0c0c0;
+}

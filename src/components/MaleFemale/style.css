@@ -1,0 +1,70 @@
+.MaleFemale {
+  position: relative;
+  width: 120px; /* Match stepper width */
+}
+
+.MaleFemale .selection {
+  border: 1px solid #bababa;
+  border-radius: 8px;
+  height: 35px; /* Match stepper height */
+  position: relative;
+  background-color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+}
+
+.MaleFemale .text-wrapper-3 {
+  color: #000000;
+  font-family: "Montserrat", Helvetica;
+  font-size: 20px; /* Match stepper font size */
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.MaleFemale .polygon {
+  height: 16px; /* Reduced from 21px */
+  width: 18px; /* Reduced from 24px */
+  transition: transform 0.2s ease;
+}
+
+.MaleFemale .polygon.rotated {
+  transform: rotate(180deg);
+}
+
+.MaleFemale .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  border: 1px solid #bababa;
+  border-radius: 8px;
+  margin-top: 4px;
+  z-index: 1000;
+}
+
+.MaleFemale .dropdown-item {
+  padding: 8px;
+  color: #000000;
+  font-family: "Montserrat", Helvetica;
+  font-size: 20px; /* Match stepper font size */
+  font-weight: 400;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  background-color: #ffffff;
+}
+
+.MaleFemale .dropdown-item:first-child {
+  border-radius: 8px 8px 0 0;
+}
+
+.MaleFemale .dropdown-item:last-child {
+  border-radius: 0 0 8px 8px;
+}
+
+.MaleFemale .dropdown-item:hover {
+  background-color: #f5f5f5;
+}

@@ -1,0 +1,39 @@
+.pause-play {
+  position: relative;
+}
+
+.pause-play .rectangle {
+  background-color: #01693e;
+  height: 55px;
+  left: 31px;
+  position: absolute;
+  top: 0;
+  width: 16px;
+}
+
+.pause-play .div {
+  background-color: #01693e;
+  height: 55px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 16px;
+}
+
+.pause-play .img {
+  height: 51px;
+  left: 2px;
+  position: absolute;
+  top: 7px;
+  width: 46px;
+}
+
+.pause-play.play-button {
+  height: 67px;
+  width: 69px;
+}
+
+.pause-play.pause-button {
+  height: 55px;
+  width: 47px;
+}

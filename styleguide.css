@@ -1,0 +1,39 @@
+:root {
+  --system-colors-grays-gray-6: rgba(242, 242, 247, 1);
+}
+
+/*
+
+To enable a theme in your HTML, simply add one of the following data attributes to an HTML element, like so:
+
+<body data-system-colors-mode="light">
+    <!-- the rest of your content -->
+</body>
+
+You can apply the theme on any DOM node, not just the `body`
+
+*/
+
+[data-system-colors-mode="light"] {
+  --system-colors-grays-gray-6: rgba(242, 242, 247, 1);
+}
+
+[data-system-colors-mode="dark"] {
+  --system-colors-grays-gray-6: rgba(28, 28, 30, 1);
+}
+
+[data-system-colors-mode="dark-elevated"] {
+  --system-colors-grays-gray-6: rgba(28, 28, 30, 1);
+}
+
+[data-system-colors-mode="IC-light"] {
+  --system-colors-grays-gray-6: rgba(242, 242, 246, 1);
+}
+
+[data-system-colors-mode="IC-dark"] {
+  --system-colors-grays-gray-6: rgba(0, 0, 0, 1);
+}
+
+[data-system-colors-mode="IC-dark-elevated"] {
+  --system-colors-grays-gray-6: rgba(0, 0, 0, 1);
+}
